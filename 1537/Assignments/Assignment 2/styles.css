@@ -149,3 +149,14 @@ table {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
+.container h1 {
+font-size: 100pt; 
+color: #81785d;
+margin: 0 auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 400pt;
+}
