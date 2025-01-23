@@ -23,9 +23,13 @@ public class Circle {
         
         try {
             System.out.println("Enter radius:");
+            
+            //get radius from user
             radius = myScanner.nextDouble(); 
            
+            //calculate if radius was doubled
             doubleRadius = radius * 2;
+            
             
             double circumference = 2 * pi * radius;
             System.out.println("Circumference is: " + circumference);

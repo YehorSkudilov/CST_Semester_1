@@ -19,7 +19,7 @@ public class Students {
         
         List<Student> students = new ArrayList<Student>();
         int spacing = 7;
-        
+
         students.add(new Student("bob", 1, 2));
         students.add(new Student("alice", 2, 3));
         students.add(new Student("john", 3, 4));
@@ -42,6 +42,7 @@ public class Students {
                 + getSpace("Bonus", spacing) 
                 + getSpace(("Total"), spacing));
         
+        //Prints the divider
         System.out.println(getSpace("---", spacing) 
                 + getSpace("---", spacing) 
                 + getSpace("---", spacing) 
