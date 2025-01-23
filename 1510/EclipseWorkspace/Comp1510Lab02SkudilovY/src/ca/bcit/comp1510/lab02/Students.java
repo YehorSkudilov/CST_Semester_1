@@ -1,3 +1,4 @@
+
 package ca.bcit.comp1510.lab02;
 
 import java.util.List;
@@ -48,11 +49,11 @@ public class Students {
         
         //prints the list of students and their info
         for (Student student : students) {
-            System.out.println(getSpace(student.Name, spacing) 
+            System.out.println(getSpace(student.name, spacing) 
                     + getSpace(student.lab, spacing) 
-                    + getSpace(student.Bonus, spacing) 
+                    + getSpace(student.bonus, spacing) 
                     + getSpace((student.lab 
-                    + student.Bonus), spacing));
+                    + student.bonus), spacing));
         }
         
     }
@@ -118,28 +119,7 @@ public class Students {
         }
      
         return border;
-       
-    }
-
-}
-
-/**
- * Student. Data class
- * @author Yehor S.
- * @version 2025
- */
-class Student {
-    
-    public String Name;
-    
-    public int lab;
-    
-    public int Bonus; 
-    
-    public Student(String name, int lab, int bonus) {
-        this.Name = name;
-        this.lab = lab;
-        this.Bonus = bonus;
     }
 }
+
  
