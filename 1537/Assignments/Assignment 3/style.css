@@ -3,121 +3,157 @@ html, body {
     padding: 0px;
     margin: 0px;
   }
+  #container {
+    background-color: black;
+    display: grid;
+    overflow-y: auto;
+    height: 100vh;
+    grid-template-columns: 100pt auto;
+    grid-template-rows: 250pt 350pt 70pt;
+  }
+
+  #content{
+    background-color: yellow;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-rows: 55% 10% 35%;
+  }
+
+  #nav {
+    background-color: aquamarine;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-rows: 70pt auto;
+
+  }
+  #logo{
+    background-color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+  }
+  #info{
+    background-color: purple;
+    grid-column: 1 / span 1;
+    grid-row: 2/ span 1;
+  }
+
+
+  #footer{
+    background-color: red;
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }
+  
+  #c1{
+    background-color: green;
+    grid-row: 1 / span 1;
+  }
+  #c2{
+    background-color: pink;
+    grid-row: 2 / span 1;
+  }
+  #c3{
+    background-color: grey;
+    grid-row: 3 / span 1;
+  }
+  #logo img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+#menu{
+  background-color: #333333;
+  display: grid;
+  grid-template-columns: 20pt auto;
+}
+
+  #menu ul {
+    grid-column: 2 / span 1;
+    margin: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  #menu ul li{
+    float:left;
+    padding: 10pt 0pt;
+
+  }
+  #menu ul li img{
+    max-width: 20px;
+    float:left;
+    margin-right: 5pt;
+
+   }
+
+  #menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0pt;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+ 
+
+  /************************************************************************************
+      MEDIA QUERIES
+      *************************************************************************************/
+      /* for 1280 px or less */
+@media screen and (max-width: 1100px) {
+
+  * { font-size: 1.0rem; }
 
   #container {
     background-color: black;
     display: grid;
-    overflow-y: auto;    height: 100vh;
-    grid-template-columns: 100pt auto;
-    grid-template-rows: 15vh 25vh 5vh 10vh 30vh 15vh auto;
+    overflow-y: auto;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 70pt 600pt 70pt 60pt;
   }
-
-  #c1 {
-    background-color: aquamarine;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 3;
-   
-  }
-  #c2{
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 1;
-    background-color: red;
-  }
-
-  
-  #c3 {
-    background-color: bisque;
-    grid-column: 2 / span 1;
-    grid-row: 5 / span 1;
-  }
-
-  #footer {
-    background-color: pink;
+  #nav {
     grid-column: 1 / span 2;
-    grid-row: 6 / span 1;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 55%;
-  }
-
-#logo{
-    background-color: orange;
-    grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-}
-  #nav{
-    background-color: green;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 2;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 55%;
+    grid-template-columns: 70pt auto;
+
+  }
+  #content{
+    grid-column: 1 / span 1;
+    grid-row: 2/ span 1;
   }
   #info{
-    background-color: grey;
     grid-column: 1 / span 1;
-    grid-row: 3 / span 3;
+    grid-row: 4/ span 1;
+  }
+  #footer{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
   }
 
-/************************************************************************************
-      MEDIA QUERIES
-      *************************************************************************************/
-      /* for 980px or less */
-e      @media screen and (max-width: 980px) {
+}
 
-        * { font-size: 1.0rem; }
+/* for 700px or less */
+@media screen and (max-width: 700px) {
 
-        #nav{
-            grid-column: 1 / span 2;
-            grid-row: 1 / span 1;
-          }
-          #info{
-     
-            grid-column: 1 / span 2;
-            grid-row: 7 / span 1;
-            height: 50pt;
-          }
-          #c1{
-            grid-column: 1 / span 2;
-            grid-row: 2 / span 2;
-          }
-          #c2{
-            grid-column: 1 / span 2;
-            grid-row: 4 / span 1;
-          }
-          #c3{
-            grid-column: 1 / span 2;
-            grid-row: 5 / span 1;
-          }
-      }
+  #nav {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 50pt;
 
-      /* for 700px or less */
-      @media screen and (max-width: 700px) {
+  }
+  #logo{
+    grid-row: 2 / span 1;
+  }
 
-        * { font-size: 0.9rem; }
-
-        #content {
-          width: auto;
-          float: none;
-        }
-        #sidebar {
-          width: auto;
-          float: none;
-        }
-
-      }
-
-      /* for 480px or less */
-      @media screen and (max-width: 480px) {
-
-        * { font-size: 0.8rem; }
-
-        #header {
-          height: auto;
-        }
-
-        #sidebar {
-          display: none;
-        }
-
-      }
+}

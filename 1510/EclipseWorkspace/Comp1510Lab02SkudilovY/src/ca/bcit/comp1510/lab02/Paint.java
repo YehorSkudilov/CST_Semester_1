@@ -34,9 +34,8 @@ public class Paint {
         System.out.println("Enter number of coats:");
         double coats = scanner.nextDouble();
         
-        double surfaceArea = 2 * ((length * width)
-                + (length * height) 
-                + (width * height));
+        double surfaceArea = ((length * width) + 2 
+                * (length * height) + 2 * (width * height));
         
         double coverageNeeded = surfaceArea * coats;
         
