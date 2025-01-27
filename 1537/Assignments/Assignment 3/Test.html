@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  display: flex;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab label {
+  background-color: inherit;
+  border: none;
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s;
+  flex: 1;
+  text-align: center;
+}
+
+/* Change background color of buttons on hover */
+.tab label:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <input type="radio" id="tab1" name="tab" checked>
+  <label for="tab1">London</label>
+
+  <input type="radio" id="tab2" name="tab">
+  <label for="tab2">Paris</label>
+
+  <input type="radio" id="tab3" name="tab">
+  <label for="tab3">Tokyo</label>
+</div>
+
+
+</body>
+</html>

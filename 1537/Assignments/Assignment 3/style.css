@@ -4,7 +4,7 @@ html, body {
     margin: 0px;
   }
   #container {
-    background-color: rgb(255, 108, 204);
+    background-color: rgb(0, 0, 0);
     display: grid;
     overflow-y: auto;
     height: 100vh;
@@ -13,7 +13,6 @@ html, body {
   }
 
   #content{
-    background-color: yellow;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
     display: grid;
@@ -28,6 +27,10 @@ html, body {
     grid-template-rows: 70pt auto;
 
   }
+
+
+
+
   #logo{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
@@ -51,14 +54,8 @@ html, body {
     grid-row: 3 / span 1;
   }
   
-  #c1{
-    background-color: green;
-    grid-row: 1 / span 1;
-  }
-  #c2{
-    background-color: pink;
-    grid-row: 2 / span 1;
-  }
+
+
   #c3{
     background-color: grey;
     grid-row: 3 / span 1;
@@ -97,7 +94,8 @@ html, body {
     display: flex;
     align-items: center;
   }
- 
+
+  
 
   /************************************************************************************
       MEDIA QUERIES
@@ -165,7 +163,7 @@ html, body {
     grid-row: 1 / span 1;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 50pt;
+    grid-template-rows: auto 70pt;
 
   }
   #logo{

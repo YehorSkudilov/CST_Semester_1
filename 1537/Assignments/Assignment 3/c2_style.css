@@ -1,0 +1,46 @@
+#c2{
+    grid-row: 2 / span 1;
+    background-color: green;
+
+  }
+.form{
+display: grid;
+grid-template-columns: 40pt 1fr 220pt;
+gap: 20pt;
+max-width: 100%; 
+padding: 10pt;
+background-color: red;
+}
+#c2 h1{
+    color: wheat;
+    box-sizing: border-box;
+
+}
+#c2 img{
+    height: 40pt;
+    margin: auto 0pt;
+    object-fit: cover;
+    box-sizing: border-box;
+
+}
+#c2 .form div *{
+    box-sizing: border-box;
+    height: 30pt;
+    margin: auto 0pt;
+    border-radius: 8pt;
+    border: 0;
+    padding: 0pt 10pt;
+}
+#c2 .form div{
+    display: flex;
+    gap: 10pt;
+
+    grid-column: 3 / span 1;
+}
+#c2 .form p{
+    grid-column: 2 / span 1;
+    white-space: normal;
+}
+#c2 .form div input{
+    width: 200pt;
+}
