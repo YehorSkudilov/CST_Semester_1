@@ -48,7 +48,10 @@ html, body {
 
 
 
- 
+ button:hover{
+background-color: #61525b;
+cursor: pointer;
+ }
   
 
 
@@ -66,9 +69,9 @@ html, body {
     margin-right: auto;
     list-style-type: none;
   }
-  #menu ul li{
-    padding: 10pt 0pt;
-
+  #menu ul li a:hover{
+    background-color: #444044;
+    
   }
   #menu ul li img{
     float:left;
@@ -82,7 +85,10 @@ html, body {
     display: block;
     color: white;
     text-align: center;
-    padding: 0pt;
+    padding: 5pt;
+    margin: 5pt 0pt 5pt 5pt;
+
+border-radius: 8pt;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -103,23 +109,20 @@ html, body {
     overflow-y: auto;
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 70pt 600pt 70pt 130pt;
+    grid-template-rows: 60pt auto 130pt 70pt;
   }
   #nav {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     display: grid;
+    margin-right: 5pt;
     grid-template-columns: 70pt auto 3pt;
 
   }
   #content{
     grid-column: 1 / span 1;
     grid-row: 2/ span 1;
-    grid-template-rows: 50% 20% 30%;
-  }
-  #footer{
-    grid-column: 1 / span 1;
-    grid-row: 3 / span 1;
+    grid-template-rows: 280pt auto auto;
   }
 
   #menu ul {
@@ -130,13 +133,10 @@ html, body {
     float:left;
     text-align: center;
   }
-  #menu ul li a {
-    margin: 0 10pt;
-  }
   #menu ul li img{
-    float:none;
+ 
     max-width: 25pt;
-    margin: 0pt;
+
 
 }
 
@@ -154,6 +154,7 @@ html, body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 70pt;
+    margin-right: 0;
 
   }
   #logo{
@@ -175,7 +176,7 @@ html, body {
 margin:0 1vw;
   }
   #container {
-    grid-template-rows: auto 600pt 70pt 150pt;
+    grid-template-rows: auto auto 150pt 70pt ;
   }
   
 }

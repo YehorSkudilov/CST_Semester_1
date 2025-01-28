@@ -25,7 +25,7 @@ text-overflow: ellihipsis;
     background-size: 20px 20px; /* Adjust the size of the image */
     background-repeat: no-repeat;
     background-position: left top;
-    padding-left: 30px; 
+    padding-left: 30pt; 
 }
 #info ul li:nth-child(1) {
     background-image: url('vampire.png'); /* Image for first list item */
@@ -43,7 +43,7 @@ text-overflow: ellihipsis;
 
     #info{
         grid-column: 1 / span 1;
-        grid-row: 4/ span 1;
+        grid-row: 3/ span 1;
 
       }
       #info ul li{
