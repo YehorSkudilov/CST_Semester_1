@@ -3,6 +3,8 @@
     color: white;
     display: grid;
     border: 1pt solid;
+    height: 100%;
+    box-sizing: border-box;
     border-color: white;
   }
   #c3 h1{

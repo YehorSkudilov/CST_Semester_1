@@ -5,6 +5,7 @@
     flex-direction: row;
     justify-content: flex-end; 
     padding-right: 5pt;
+    
   }
 #footer div{
 display: flex;
