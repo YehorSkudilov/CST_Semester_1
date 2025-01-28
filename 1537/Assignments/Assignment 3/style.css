@@ -10,7 +10,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 100pt auto;
-    grid-template-rows: 250pt 390pt 70pt;
+    grid-template-rows: 230pt 410pt 70pt;
     
   }
 
@@ -25,11 +25,15 @@ html, body {
   }
 
   #nav {
-    background-color: #000000;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     display: grid;
-    grid-template-rows: 70pt auto;
+    grid-template-rows: 60pt auto;
+    background-color: #373242;
+  border-radius: 8pt;
+  margin: 10pt 0pt 10pt 10pt;
+  height: 90%;
+  box-sizing: border-box;
 
   }
 
@@ -39,11 +43,16 @@ html, body {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     text-align: center;
-    padding: 10pt;
+    padding: 10pt;   
+    box-sizing: border-box;
+  height: 100%;
+
   }
   #logo img{
     max-width: 100%;
     max-height: 100%;
+    box-sizing: border-box;
+
   }
 
 
@@ -70,7 +79,7 @@ cursor: pointer;
     list-style-type: none;
   }
   #menu ul li a:hover{
-    background-color: #444044;
+    background-color: #29262e;
     
   }
   #menu ul li img{
@@ -86,7 +95,7 @@ cursor: pointer;
     color: white;
     text-align: center;
     padding: 5pt;
-    margin: 5pt 0pt 5pt 5pt;
+    margin: 5pt 5pt 5pt 5pt;
 
 border-radius: 8pt;
     text-decoration: none;
@@ -115,8 +124,12 @@ border-radius: 8pt;
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     display: grid;
-    margin-right: 5pt;
+    margin: 0pt;
+    padding-right: 5pt;
     grid-template-columns: 70pt auto 3pt;
+    border-radius: 0;
+    height: 100%;
+
 
   }
   #content{
@@ -126,6 +139,7 @@ border-radius: 8pt;
   }
 
   #menu ul {
+    
     margin: auto 0 auto auto;
   }
   #menu ul li{
@@ -136,7 +150,6 @@ border-radius: 8pt;
   #menu ul li img{
  
     max-width: 25pt;
-
 
 }
 
