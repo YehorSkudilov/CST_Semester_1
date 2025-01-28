@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: flex-end; 
     padding-right: 5pt;
-    
+    color:white
   }
 #footer div{
 display: flex;
@@ -14,4 +14,7 @@ display: flex;
 #footer div img{
     height: 30pt;
     margin: auto 10pt auto auto;
+}
+#footer div p{
+  
 }
