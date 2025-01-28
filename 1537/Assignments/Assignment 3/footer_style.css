@@ -1,0 +1,16 @@
+#footer{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
+    padding-right: 5pt;
+  }
+#footer div{
+display: flex;
+
+}
+#footer div img{
+    height: 30pt;
+    margin: auto 10pt auto auto;
+}
