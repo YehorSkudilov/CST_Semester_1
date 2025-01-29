@@ -20,23 +20,23 @@ aside h2{
 aside ul li{
     margin-bottom: 10pt;
 
-    background-image: url('logo.png');
+    background-image: url('../images/logo.png');
     background-size: 20px 20px; /* Adjust the size of the image */
     background-repeat: no-repeat;
     background-position: left top;
     padding-left: 30pt; 
 }
 aside ul li:nth-child(1) {
-    background-image: url('vampire.png'); /* Image for first list item */
+    background-image: url('../images/vampire.png'); /* Image for first list item */
   }
   aside ul li:nth-child(2) {
-    background-image: url('skeleton.png'); /* Image for first list item */
+    background-image: url('../images/skeleton.png'); /* Image for first list item */
   }
   aside ul li:nth-child(3) {
-    background-image: url('zombie.png'); /* Image for first list item */
+    background-image: url('../images/zombie.png'); /* Image for first list item */
   }
   aside ul li:nth-child(4) {
-    background-image: url('werewolf.png'); /* Image for first list item */
+    background-image: url('../images/werewolf.png'); /* Image for first list item */
   }
 @media screen and (max-width: 1200px) {
 
