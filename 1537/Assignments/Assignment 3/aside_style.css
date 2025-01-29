@@ -1,4 +1,4 @@
-#info{
+aside{
     grid-column: 1 / span 1;
     grid-row: 2/ span 1;
     box-sizing: border-box;
@@ -6,19 +6,18 @@ color:white;
 word-wrap: break-word; 
 display: grid;
 text-overflow: ellihipsis; 
-
   }
-#info ul{
+aside ul{
     margin-left: -25pt;
     margin-top: -10pt;
     list-style: none;
 }
-#info h2{
+aside h2{
     margin: auto;
     font-size: 22pt; 
     margin-bottom: 20pt;
 }
-#info ul li{
+aside ul li{
     margin-bottom: 10pt;
 
     background-image: url('logo.png');
@@ -27,26 +26,28 @@ text-overflow: ellihipsis;
     background-position: left top;
     padding-left: 30pt; 
 }
-#info ul li:nth-child(1) {
+aside ul li:nth-child(1) {
     background-image: url('vampire.png'); /* Image for first list item */
   }
-  #info ul li:nth-child(2) {
+  aside ul li:nth-child(2) {
     background-image: url('skeleton.png'); /* Image for first list item */
   }
-  #info ul li:nth-child(3) {
+  aside ul li:nth-child(3) {
     background-image: url('zombie.png'); /* Image for first list item */
   }
-  #info ul li:nth-child(4) {
+  aside ul li:nth-child(4) {
     background-image: url('werewolf.png'); /* Image for first list item */
   }
 @media screen and (max-width: 1200px) {
 
-    #info{
+    aside{
         grid-column: 1 / span 1;
         grid-row: 3/ span 1;
         height: auto;
+        margin-bottom: 10pt;
+
       }
-      #info ul li{
+      aside ul li{
         padding-left: 20pt; 
         margin-left: -10pt;
         padding-right: 20pt; 
@@ -55,10 +56,10 @@ text-overflow: ellihipsis;
       }
 
 
-      #info h2{
+      aside h2{
             margin: auto auto 10pt auto;
       }
-      #info ul {
+      aside ul {
         
 margin:0;
 display: flex;

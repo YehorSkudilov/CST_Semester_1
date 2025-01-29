@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="tabs_style.css">
     <link rel="stylesheet" href="c1_style.css">
     <link rel="stylesheet" href="c2_style.css">
-    <link rel="stylesheet" href="info_style.css">
+    <link rel="stylesheet" href="aside_style.css">
     <link rel="stylesheet" href="footer_style.css">
     <link rel="stylesheet" href="c3_style.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
@@ -17,20 +17,35 @@
   </head>
 
   <body>
-    <!-- <img width="100%" src="sample.png"> -->
+
     <div id="container">
+
+          <header>
+      <div id="logo">
+      <img src="logo.png" alt="logo.png">
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html"><img src="home.png">Home</a></li>
+          <li><a href="about.html"><img src="graveyard.png">Graveyard</a></li>
+          <li><a href="contact.html"><img src="gallery.png">Gallery</a></li>
+          <li><a href="contact.html"><img src="help.png">Help</a></li>
+        </ul>
+      </div>
+    </header>
 
       <div id="content">
         
         <div id="c1">
  
-          <div class="image_frame">
+          <figure class="image_frame">
+            <figcaption>Monster</figcaption>
             <div class="overlay">
               <h1>Frankenstein</h1>
               <p>Frankenstein is a cat.</p>
             </div>
             <img src="Frankenstein.webp" alt="cat1.jpg">
-          </div>
+          </figure>
           
           <div class="tab">
             <input type="radio" id="tab1" name="tab" checked>
@@ -90,7 +105,7 @@
 
       </div>
       
-      <div id="footer">
+      <footer>
         <div>
           <p>© 2025 Monster Lair. All rights reserved. | Beware the monsters lurking in the dark! | Privacy Policy | Terms of Service</p>
         </div>
@@ -106,10 +121,10 @@
             <img src="book.png"/>
           </div>
         </div>
-      </div>
+      </footer>
 
    
-      <div id="info">
+      <aside>
       <h2>Monsters</h1>
       <ul>
         <li ><strong>Vampires</strong>: Undead creatures that drink blood to survive.</li>
@@ -118,26 +133,10 @@
         <li><strong>Werewolves</strong>: Humans who transform into wolves, often under a full moon.</li>
       </ul>
       
-      </div>
-
-      <div id="nav">
-        <div id="logo">
-        <img src="logo.png" alt="logo.png">
-        </div>
-        <div id="menu">
-          <ul>
-            <li><a href="index.html"><img src="home.png">Home</a></li>
-            <li><a href="about.html"><img src="graveyard.png">Graveyard</a></li>
-            <li><a href="contact.html"><img src="gallery.png">Gallery</a></li>
-            <li><a href="contact.html"><img src="help.png">Help</a></li>
-          </ul>
-     </div>
-
-      
+      </aside>
 
 
-      </div>
+
     </div>
-
   </body>
 </html>

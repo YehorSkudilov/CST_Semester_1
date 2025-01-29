@@ -38,7 +38,7 @@ html, body {
 
   }
 
-  #nav {
+  header {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     display: grid;
@@ -132,7 +132,7 @@ border-radius: 8pt;
     grid-template-columns: 100%;
     grid-template-rows: 60pt auto auto 70pt;
   }
-  #nav {
+  header {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     display: grid;
@@ -165,7 +165,9 @@ border-radius: 8pt;
 
 }
 
-
+#logo{
+  margin-top: -5pt;
+}
 
 }
 
@@ -173,7 +175,7 @@ border-radius: 8pt;
 /* for 700px or less */
 @media screen and (max-width: 700px) {
 
-  #nav {
+  header {
     grid-column: 1 / span 2;
     grid-row: 1 / span 1;
     display: grid;
@@ -199,6 +201,9 @@ border-radius: 8pt;
    #menu ul li{
     padding: 0pt;
 margin:0 1vw;
+  }
+  #menu ul li a {
+    font-size: 16pt;
   }
   #container {
     grid-template-rows: auto auto 180pt 90pt ;
