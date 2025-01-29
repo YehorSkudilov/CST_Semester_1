@@ -24,7 +24,7 @@ html, body {
     height: 100vh;
     width: 100vw;
     grid-template-columns: 100pt auto;
-    grid-template-rows: 230pt 410pt 70pt;
+    grid-template-rows: 230pt 470pt 70pt;
     
   }
 
@@ -34,8 +34,8 @@ html, body {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 50% 15% 35%;
-    
+    grid-template-rows: 50% 15% auto;
+
   }
 
   #nav {
@@ -57,7 +57,7 @@ html, body {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     text-align: center;
-    padding: 10pt;   
+    padding: 10pt 10pt 0pt 10pt;   
     box-sizing: border-box;
   height: 100%;
 
@@ -76,10 +76,6 @@ background-color: #61525b;
 cursor: pointer;
  }
   
-
-
-
-
 #menu{
   display: grid;
 }
@@ -88,8 +84,7 @@ cursor: pointer;
     padding: 0;
     display: table;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     list-style-type: none;
   }
   #menu ul li a:hover{
@@ -110,9 +105,8 @@ cursor: pointer;
     text-align: center;
     padding: 5pt;
     font-family: Font2;
-font-size: 14pt;
+font-size: 10pt;
     margin: 5pt 5pt 5pt 5pt;
-
 border-radius: 8pt;
     text-decoration: none;
     display: flex;
@@ -125,16 +119,18 @@ border-radius: 8pt;
       MEDIA QUERIES
       *************************************************************************************/
       /* for 1280 px or less */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 
   * { font-size: 1.0rem; }
-
+  #menu ul li a {
+    font-size: 14pt;
+  }
   #container {
     display: grid;
     overflow-y: auto;
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 60pt auto 130pt 70pt;
+    grid-template-rows: 60pt auto auto 70pt;
   }
   #nav {
     grid-column: 1 / span 2;
@@ -205,7 +201,7 @@ border-radius: 8pt;
 margin:0 1vw;
   }
   #container {
-    grid-template-rows: auto auto 150pt 70pt ;
+    grid-template-rows: auto auto 180pt 90pt ;
   }
   
 }

@@ -33,7 +33,7 @@ margin-left: 20pt;
 display: flex;
 
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   #footer{
     
     grid-column: 1 / span 1;
