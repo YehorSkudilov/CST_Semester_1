@@ -15,9 +15,15 @@ display: flex;
 }
 #footer div img{
     height: 30pt;
+    padding: 5pt;
     margin: auto 10pt auto auto;
     align-self: flex-end;
 
+}
+#footer div img:hover{
+  cursor: pointer;
+  border-radius: 8pt;
+  background-color: #29262e;
 }
 #footer div p{
 margin-left: 20pt;
