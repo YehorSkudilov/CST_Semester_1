@@ -55,6 +55,25 @@ html, body {
 background-color: #61525b;
 cursor: pointer;
  }
+
+ a {
+  text-decoration: none; /* Removes the default underline */
+  color: #af95dc; /* Set text color */
+  font-weight: bold; /* Makes the text bold */
+  padding: 5px 10px; /* Adds padding */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+
+a:hover {
+  background-color: #29262e; 
+  color: white;
+}
+
+a:focus {
+  outline: none; /* Removes the focus outline */
+  box-shadow: 0 0 0 2px #29262e; /* Add a focus shadow for better accessibility */
+}
   
   /************************************************************************************
       MEDIA QUERIES
