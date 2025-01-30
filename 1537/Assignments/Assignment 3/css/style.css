@@ -52,7 +52,8 @@ html, body {
   }
 
  button:hover{
-background-color: #61525b;
+background-color: #29262e;
+color: white;
 cursor: pointer;
  }
 
