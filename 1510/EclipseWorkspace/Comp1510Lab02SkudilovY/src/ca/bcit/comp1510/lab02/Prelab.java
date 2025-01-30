@@ -1,5 +1,11 @@
 package ca.bcit.comp1510.lab02;
 
+/**
+ * Java Doc.
+ * @author Yehor S.
+ * @version 2025
+ */
+
 public class Prelab {
 }
 
