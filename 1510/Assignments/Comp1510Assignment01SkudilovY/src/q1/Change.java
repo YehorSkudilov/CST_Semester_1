@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Change. Represents money value in bills and coins.
  * @author Yehor S.
- * @version 2025
+ * @version 1.0
  */
 
 public class Change {
@@ -19,7 +19,8 @@ public class Change {
     
     public static void main(String[] args) {
         
-        System.out.println("Enter a number to convert into denominations: ");
+        System.out.println("Enter a number like 10.10 to "
+                + "convert into denominations: ");
         
         Scanner scan = new Scanner(System.in);
         

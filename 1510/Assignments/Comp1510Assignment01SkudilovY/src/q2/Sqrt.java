@@ -5,13 +5,13 @@ import java.util.Scanner;
 /**
  * Sqrt. Calculates an approximation to the square root.
  * @author Yehor S.
- * @version 2025
+ * @version 1.0
  */
 
 public class Sqrt {
     
     /**
-     * main. Runs the program.
+     * main. Runs the program
      * @param args unused.
      */
     
