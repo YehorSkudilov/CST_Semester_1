@@ -3,7 +3,9 @@ package q2;
 import java.util.Scanner;
 
 /**
- * Sqrt. Calculates an approximation to the square root.
+ * Sqrt. Calculates an approximation to the square root of a number given.
+ * Takes a number and calculates an approximation to the 
+ * square root 10 times and prints every result.
  * @author Yehor S.
  * @version 1.0
  */
@@ -11,28 +13,52 @@ import java.util.Scanner;
 public class Sqrt {
     
     /**
-     * main. Runs the program
-     * @param args unused.
+     * This is the main method that runs the code.
+     *
+     * @param args command line arguments.
      */
     
     public static void main(String[] args) {
         
         Scanner scan = new Scanner(System.in);
         
-        System.out.println("Enter double: ");
+        //Prompt and get input
+        System.out.println("Enter number to square root: ");
         double a = scan.nextDouble();
         
-        //apply the square root formula and print
+        //Use formula #1 and print.
         double s = (a + 1) / 2;
         System.out.println("Estimate 1: " + s);
         
-        //9 times apply the square root formula and print
-        for (int i = 2; i < 11; i++) {
-            s = (s + a / s) / 2;
-            System.out.println("Estimate " + i + ": " + s);
-        }
+        //Repeat formula #2 9 times and print each.
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 2" + ": " + s);
         
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 3" + ": " + s);
         
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 4" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 5" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 6" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 7" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 8" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 9" + ": " + s);
+        
+        s = (s + a / s) / 2;
+        System.out.println("Estimate 10" + ": " + s);
+                
+        scan.close();
     }
 
 }

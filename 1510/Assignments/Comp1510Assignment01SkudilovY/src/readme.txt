@@ -1,28 +1,24 @@
-[Student Name], [Student ID], [Set], [Date]
+Yehor Skudilov, A01439865, A, Jan. 31 2025
 
-This assignment is [enter percent]% complete.
+This assignment is 100% complete.
 
 
 ------------------------
 Question one (Change) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+[Complete]
 
 ------------------------
 Question two (Sqrt) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+[Complete]
 
 ------------------------
 Question three (Reverse) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+[Complete]
 
 ------------------------
 Question four (Pack) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+[Complete]

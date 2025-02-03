@@ -1,11 +1,11 @@
 package q1;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Change. Represents money value in bills and coins.
+ * Change. Represents money value in bills and cents.
+ * Takes numeric user input and converts it into a list 
+ * of the number in denominations.
  * @author Yehor S.
  * @version 1.0
  */
@@ -13,70 +13,68 @@ import java.util.Scanner;
 public class Change {
     
     /**
-     * main. Runs the program.
-     * @param args unused.
+     * This is the main method that runs the code.
+     *
+     * @param args command line arguments.
      */
     
     public static void main(String[] args) {
+        final int toCentsConversion = 100;
         
+        final int cad10 = 1000;
+        final int cad5 = 500;
+        final int cad2 = 200;
+        final int cad1 = 100;
+        final int cent25 = 25;
+        final int cent10 = 10;
+        final int cent5 = 5;
+        final int cent1 = 1;
+
+        Scanner scan = new Scanner(System.in);
+
+        //Prompts and gets an input
         System.out.println("Enter a number like 10.10 to "
                 + "convert into denominations: ");
-        
-        Scanner scan = new Scanner(System.in);
-        
-        //Get input from user
-        double userGivenNumber = scan.nextDouble();
+        int userGivenNumberInCoins = (int) (scan.nextDouble() 
+                * toCentsConversion); 
 
-        //Convert to int keeping 2 fractional decimals.
-        int[] userGivenNumberArray = {(int) (userGivenNumber * 100)}; 
+       
+        System.out.println("\nYour number in denominations: ");
         
-        //Create a dictionary for denominations that remembers the order or .put
-        Map<String, Integer> denominations = new LinkedHashMap<>();
-        
-        //Bills
-        denominations.put("Ten Dollar Bill", 1000);
-        denominations.put("Five Dollar Bill", 500);
-        denominations.put("Toonie", 200); 
-        denominations.put("Loonie", 100); 
+        //Get the number of denominations that will fit in the number and print.
+        int numberOfCad10 = userGivenNumberInCoins / cad10;
+        userGivenNumberInCoins -= numberOfCad10 * cad10;
+        System.out.println("    * Ten Dollar Bills: " + numberOfCad10);
 
-        //Coins
-        denominations.put("Quarter", 25);
-        denominations.put("Dime", 10);
-        denominations.put("Nickel", 5);
-        denominations.put("Penny", 1);
-        
-        //Dictionary for storing the values
-        Map<String, Integer> storedDenominations = new LinkedHashMap<>();
-        
-        //Go through each denomination and get how many of 
-        //them will fit in the user given number.
-        //Divide the value stored*denomination from the userGivenNumber
-        denominations.forEach((key, value) -> {
-            int numberOfDenomination = (userGivenNumberArray[0] / value);
-            userGivenNumberArray[0] -= numberOfDenomination * value; 
-            storedDenominations.put(key, numberOfDenomination);
-        });
-        
-        System.out.println("\nYour number " 
-                + userGivenNumber 
-                + " in denominations is: ");
+        int numberOfCad5 = userGivenNumberInCoins / cad5;
+        userGivenNumberInCoins -= numberOfCad5 * cad5;
+        System.out.println("    * Five Dollar Bills: " + numberOfCad5);
 
-        //Print out all of the values in the storedDenominations
-        storedDenominations.forEach((key, value) -> {
-            
-            //If value of the denomination is 0 don't print it
-            if (value > 0) {
-                
-                //Add s to values that are > than 1
-                if (value > 1) {
-                    System.out.println("    • " + value + " " + key + "s");
+        int numberOfCad2 = userGivenNumberInCoins / cad2;
+        userGivenNumberInCoins -= numberOfCad2 * cad2;
+        System.out.println("    * Toonies: " + numberOfCad2);
 
-                } else {
-                    System.out.println("    • " + value + " " + key);
+        int numberOfCad1 = userGivenNumberInCoins / cad1;
+        userGivenNumberInCoins -= numberOfCad1 * cad1;
+        System.out.println("    * Loonies: " + numberOfCad1);
 
-                }
-            }
-        });
+        int numberOfCent25 = userGivenNumberInCoins / cent25;
+        userGivenNumberInCoins -= numberOfCent25 * cent25;
+        System.out.println("    * Quarters: " + numberOfCent25);
+
+        int numberOfCent10 = userGivenNumberInCoins / cent10;
+        userGivenNumberInCoins -= numberOfCent10 * cent10;
+        System.out.println("    * Dimes: " + numberOfCent10);
+
+        int numberOfCent5 = userGivenNumberInCoins / cent5;
+        userGivenNumberInCoins -= numberOfCent5 * cent5;
+        System.out.println("    * Nickels: " + numberOfCent5);
+
+        int numberOfCent1 = userGivenNumberInCoins / cent1;
+        userGivenNumberInCoins -= numberOfCent1 * cent1;
+        System.out.println("    * Pennies: " + numberOfCent1);
+
+        scan.close();
     }
 
 }
