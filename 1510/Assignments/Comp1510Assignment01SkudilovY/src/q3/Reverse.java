@@ -1,13 +1,16 @@
 package q3;
 
+import java.util.Stack;
+import java.util.Scanner;
 /**
- * This is where you put your description about what this class does. You don't
- * have to write an essay but you should describe exactly what it does.
- * Describing it will help you to understand the programming problem better.
+ * Reverse. Reverses a line of 10 words.
+ * Takes input of 10 words separated by space 
+ * and writes them out in reverse order.  
  *
- * @author Your Name goes here
+ * @author Yehor Skudilov
  * @version 1.0
  */
+
 public class Reverse {
 
     /**
@@ -16,8 +19,39 @@ public class Reverse {
      * @param args command line arguments.
      */
     public static void main(String[] args) {
-        // Replace this and following with your code!!!
-        System.out.println("Question three was called and ran sucessfully.");
+
+        Stack<String> wordStack = new Stack<String>();
+        
+        Scanner scan = new Scanner(System.in);
+        
+        //Prompts and gets input of 10 words separated by space 
+        //and pushes into the stack.
+        System.out.println("Enter 10 words separated by space to reverse: ");
+        
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+        wordStack.push(scan.next());
+
+        //Prints the words in reverse order
+        System.out.println("Reversed: " + wordStack.pop() + " " 
+                + wordStack.pop() + " " 
+                + wordStack.pop() + " " 
+                + wordStack.pop() + " " 
+                + wordStack.pop() + " "
+                + wordStack.pop() + " "
+                + wordStack.pop() + " "
+                + wordStack.pop() + " "
+                + wordStack.pop() + " "
+                + wordStack.pop() + " ");
+        
+        scan.close();
     }
 
 }
