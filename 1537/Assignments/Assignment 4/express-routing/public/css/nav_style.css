@@ -1,0 +1,121 @@
+#nav{
+    display: grid;
+  }
+
+  
+    #nav ul {
+      padding: 0;
+      display: table;
+      overflow: hidden;
+      margin: auto;
+      list-style-type: none;
+    }
+    #nav ul li a:hover{
+      background-color: #29262e;
+      
+    }
+    #nav ul li img{
+      float:left;
+  
+      max-width: 20px;
+      margin-right: 5pt;
+  
+     }
+  
+    #nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 5pt;
+      font-family: Font2;
+  font-size: 10pt;
+      margin: 5pt 5pt 5pt 5pt;
+  border-radius: 8pt;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+#logo{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding: 10pt 10pt 0pt 10pt;   
+    box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  }
+  #logo .circle {
+    position: absolute;
+    z-index: -1;
+    margin: -4pt -7.5pt;
+    width: 93%;  
+    height: 100%; 
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0); /* Adjust color as needed */
+  }
+  #logo img{
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+  @media screen and (max-width: 1200px) {
+    #nav ul li a {
+        font-size: 14pt;
+      }
+      #logo .circle {
+        margin: -4.5pt -7.5pt;
+        width: 93%;  
+        height: 100%; 
+      }
+      #nav ul {
+    
+        margin: auto 0 auto auto;
+      }
+      #nav ul li{
+        
+        float:left;
+        text-align: center;
+      }
+      #nav ul li img{
+     
+        max-width: 25pt;
+    
+    }
+    
+    #logo{
+      margin-top: -5pt;
+    }
+    
+    
+    }
+    @media screen and (max-width: 700px) {
+
+      #logo .circle {
+        margin: -4.5pt 37.7%;
+        width: 20%;  
+        height: 98%; 
+      }
+        #logo{
+            grid-row: 2 / span 1;
+          }
+          #nav ul {
+            margin: auto;
+            flex-direction: column; 
+          }
+        
+          #nav ul li img{
+        
+            max-width: 0;
+            margin: 0;
+        
+           }
+           #nav ul li{
+            padding: 0pt;
+        margin:0 1vw;
+          }
+          #nav ul li a {
+            font-size: 16pt;
+          }
+    }
