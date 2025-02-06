@@ -38,7 +38,8 @@ public class RollingMultiDice {
         die2.setFaceValue(newFace);
         System.out.println("Die One: " + die1 + ", Die Two: " + die2);
 
-        System.out.println("\nGetting face value from the die objects (die1 and die2)");
+        System.out.println("\nGetting face value from the die "
+                + "objects (die1 and die2)");
         sum = die1.getFaceValue() + die2.getFaceValue();
         System.out.println("Sum: " + sum);
 
