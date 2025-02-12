@@ -1,0 +1,52 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
+
+/* New Color Palette:
+* Lightest (Text):         #00c279      
+* Dark Green (Primary):    #2b2d35
+* Light Green (Secondary): #ff738d     
+* Reddish-Brown (Accent):  #bc5c70
+* Reddish-Brown (Accent):  #0a9362
+*/
+*{
+    font-family: 'Caveat', cursive;
+}
+.bg-info {
+    background-color: #2b2d35 !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #00c279;         
+}
+.btn {
+    color: White;            
+    background-color: #ff738d;
+}
+.btn:hover {
+    background-color: #bc5c70;
+}
+.navbar-toggler{
+    background-color: #00c279;
+}
+.navbar-toggler:hover{
+    background-color: #0a9362;
+}
+img{
+    border-radius: 8pt;
+}
+.center{
+    text-align: center;
+}
+.py-3 {
+    margin-top: 10pt;
+    color:#00c279;
+}
+.material-icons{
+    margin: 2pt;
+    font-family: "Material Symbols Outlined";
+font-size: 20pt;
+color: #ff738d;
+}
