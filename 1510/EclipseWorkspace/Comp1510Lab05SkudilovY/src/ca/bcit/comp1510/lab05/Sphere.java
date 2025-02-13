@@ -4,11 +4,12 @@ package ca.bcit.comp1510.lab05;
  * Sphere. Represents a Sphere concept.
  * @author Yehor S.
  * @version 2025
- * @param x coorfinate.
+ * @param x coordinate.
  * @param y coordinate.
  * @param z coordinate.
  * @param radius is radius.
  */
+
 public record Sphere(double x, double y, double z, double radius) {
     /**
      * Represents 4.
@@ -35,7 +36,7 @@ public record Sphere(double x, double y, double z, double radius) {
     
     /**
      * getVolume. Gets volume of the Sphere.
-     * @return colume of the Sphere.
+     * @return volume of the Sphere.
      */
     public double getVolume() {
         return F * Math.PI * Math.pow(radius, THREE);
@@ -47,20 +48,5 @@ public record Sphere(double x, double y, double z, double radius) {
      */
     public String toString() {
         return getSurfaceArea() + " " + getVolume();
-    }
+    } 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//greatful dead

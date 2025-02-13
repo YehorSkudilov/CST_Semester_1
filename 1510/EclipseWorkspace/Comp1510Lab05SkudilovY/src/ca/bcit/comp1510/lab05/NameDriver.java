@@ -27,5 +27,6 @@ public class NameDriver {
         System.out.println("Check if first name matches: ");
         System.out.println(name.firstNameEquals(scan.next()));
         System.out.println(name.toString());
+        scan.close();
     }
 }
